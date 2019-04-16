@@ -32,13 +32,31 @@
                                     <action selector="testBridgeTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dR-3r-hsg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRX-TI-Gwq">
+                                <rect key="frame" x="79" y="436.5" width="217" height="30"/>
+                                <state key="normal" title="Test __bridge (no NSInvocation)"/>
+                                <connections>
+                                    <action selector="testBridgeWithoutInvocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuy-W8-fCt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2I-eH-teW">
+                                <rect key="frame" x="49" y="382.5" width="277" height="30"/>
+                                <state key="normal" title="Test __bridge_transfer (no NSInvocation)"/>
+                                <connections>
+                                    <action selector="testBridgeTransferWithoutInvocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DYx-bF-3dG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dRX-TI-Gwq" firstAttribute="top" secondItem="q2I-eH-teW" secondAttribute="bottom" constant="24" id="GRR-5l-A37"/>
                             <constraint firstItem="RXM-wv-x5g" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Hr4-1u-k3J"/>
                             <constraint firstItem="NaN-CT-HjX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oct-C9-O9O"/>
                             <constraint firstItem="RXM-wv-x5g" firstAttribute="top" secondItem="NaN-CT-HjX" secondAttribute="bottom" constant="24" id="dao-0h-Y5K"/>
+                            <constraint firstItem="dRX-TI-Gwq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pDs-AT-6Xb"/>
+                            <constraint firstItem="q2I-eH-teW" firstAttribute="top" secondItem="RXM-wv-x5g" secondAttribute="bottom" constant="24" id="sde-Bu-KJg"/>
                             <constraint firstItem="RXM-wv-x5g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uRX-NI-riG"/>
+                            <constraint firstItem="q2I-eH-teW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xQc-Pn-OWa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

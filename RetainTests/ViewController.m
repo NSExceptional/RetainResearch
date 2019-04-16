@@ -40,6 +40,7 @@
     const void *objectReturnedFromMethod = nil;
     [getWatchdogInvocation getReturnValue:&objectReturnedFromMethod];
     returnObject = (__bridge_transfer id)objectReturnedFromMethod;
+    NSLog(@"%@", returnObject);
 }
 
 - (IBAction)testBridge:(id)sender {
@@ -55,6 +56,30 @@
     const void *objectReturnedFromMethod = nil;
     [getWatchdogInvocation getReturnValue:&objectReturnedFromMethod];
     returnObject = (__bridge id)objectReturnedFromMethod;
+    NSLog(@"%@", returnObject);
+}
+
+- (IBAction)testBridgeWithoutInvocation:(id)sender {
+    const void *objectReturnedFromMethod = [self pointerToWatchdog];
+    id returnObject = (__bridge id)objectReturnedFromMethod;
+    NSLog(@"%@", returnObject);
+}
+
+- (IBAction)testBridgeTransferWithoutInvocation:(id)sender {
+    const void *objectReturnedFromMethod = [self pointerToWatchdog];
+    id returnObject = (__bridge_transfer id)objectReturnedFromMethod;
+    NSLog(@"%@", returnObject);
+}
+
+- (const void *)pointerToWatchdog {
+    NSString *safeStringPointer = [NSString stringWithFormat:@"%p", self.watchdog];
+    
+    const void *ptr = nil;
+    unsigned long long tmp = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:safeStringPointer];
+    [scanner scanHexLongLong:&tmp];
+    ptr = (const void *)tmp;
+    return ptr;
 }
 
 - (void)viewDidLoad {
