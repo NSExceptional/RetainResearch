@@ -7,29 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		386B763622662B4B0031EDAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B763522662B4B0031EDAB /* AppDelegate.m */; };
-		386B763922662B4B0031EDAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B763822662B4B0031EDAB /* ViewController.m */; };
-		386B763C22662B4B0031EDAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B763A22662B4B0031EDAB /* Main.storyboard */; };
-		386B763E22662B4C0031EDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386B763D22662B4C0031EDAB /* Assets.xcassets */; };
-		386B764122662B4C0031EDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386B763F22662B4C0031EDAB /* LaunchScreen.storyboard */; };
-		386B764422662B4C0031EDAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B764322662B4C0031EDAB /* main.m */; };
+		C3F31D5B2268E220003C991A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F31D5A2268E220003C991A /* Tests.m */; };
+		C3F31D622268E341003C991A /* Watchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F31D612268E341003C991A /* Watchdog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		386B763122662B4B0031EDAB /* RetainTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		386B763422662B4B0031EDAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		386B763522662B4B0031EDAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		386B763722662B4B0031EDAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		386B763822662B4B0031EDAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		386B763B22662B4B0031EDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		386B763D22662B4C0031EDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		386B764022662B4C0031EDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		386B764222662B4C0031EDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		386B764322662B4C0031EDAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3F31D582268E220003C991A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F31D5A2268E220003C991A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		C3F31D5C2268E220003C991A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F31D602268E341003C991A /* Watchdog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Watchdog.h; sourceTree = "<group>"; };
+		C3F31D612268E341003C991A /* Watchdog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watchdog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		386B762E22662B4B0031EDAB /* Frameworks */ = {
+		C3F31D552268E220003C991A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +33,7 @@
 		386B762822662B4B0031EDAB = {
 			isa = PBXGroup;
 			children = (
-				386B763322662B4B0031EDAB /* RetainTests */,
+				C3F31D592268E220003C991A /* Tests */,
 				386B763222662B4B0031EDAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,46 +41,41 @@
 		386B763222662B4B0031EDAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				386B763122662B4B0031EDAB /* RetainTests.app */,
+				C3F31D582268E220003C991A /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		386B763322662B4B0031EDAB /* RetainTests */ = {
+		C3F31D592268E220003C991A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				386B763422662B4B0031EDAB /* AppDelegate.h */,
-				386B763522662B4B0031EDAB /* AppDelegate.m */,
-				386B763722662B4B0031EDAB /* ViewController.h */,
-				386B763822662B4B0031EDAB /* ViewController.m */,
-				386B763A22662B4B0031EDAB /* Main.storyboard */,
-				386B763D22662B4C0031EDAB /* Assets.xcassets */,
-				386B763F22662B4C0031EDAB /* LaunchScreen.storyboard */,
-				386B764222662B4C0031EDAB /* Info.plist */,
-				386B764322662B4C0031EDAB /* main.m */,
+				C3F31D5C2268E220003C991A /* Info.plist */,
+				C3F31D5A2268E220003C991A /* Tests.m */,
+				C3F31D602268E341003C991A /* Watchdog.h */,
+				C3F31D612268E341003C991A /* Watchdog.m */,
 			);
-			path = RetainTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		386B763022662B4B0031EDAB /* RetainTests */ = {
+		C3F31D572268E220003C991A /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 386B764722662B4C0031EDAB /* Build configuration list for PBXNativeTarget "RetainTests" */;
+			buildConfigurationList = C3F31D5F2268E220003C991A /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				386B762D22662B4B0031EDAB /* Sources */,
-				386B762E22662B4B0031EDAB /* Frameworks */,
-				386B762F22662B4B0031EDAB /* Resources */,
+				C3F31D542268E220003C991A /* Sources */,
+				C3F31D552268E220003C991A /* Frameworks */,
+				C3F31D562268E220003C991A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RetainTests;
-			productName = RetainTests;
-			productReference = 386B763122662B4B0031EDAB /* RetainTests.app */;
-			productType = "com.apple.product-type.application";
+			name = Tests;
+			productName = Tests;
+			productReference = C3F31D582268E220003C991A /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,8 +86,8 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Alexander Leontev";
 				TargetAttributes = {
-					386B763022662B4B0031EDAB = {
-						CreatedOnToolsVersion = 10.1;
+					C3F31D572268E220003C991A = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
@@ -118,55 +104,32 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				386B763022662B4B0031EDAB /* RetainTests */,
+				C3F31D572268E220003C991A /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		386B762F22662B4B0031EDAB /* Resources */ = {
+		C3F31D562268E220003C991A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386B764122662B4C0031EDAB /* LaunchScreen.storyboard in Resources */,
-				386B763E22662B4C0031EDAB /* Assets.xcassets in Resources */,
-				386B763C22662B4B0031EDAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		386B762D22662B4B0031EDAB /* Sources */ = {
+		C3F31D542268E220003C991A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386B763922662B4B0031EDAB /* ViewController.m in Sources */,
-				386B764422662B4C0031EDAB /* main.m in Sources */,
-				386B763622662B4B0031EDAB /* AppDelegate.m in Sources */,
+				C3F31D622268E341003C991A /* Watchdog.m in Sources */,
+				C3F31D5B2268E220003C991A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		386B763A22662B4B0031EDAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				386B763B22662B4B0031EDAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		386B763F22662B4C0031EDAB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				386B764022662B4C0031EDAB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		386B764522662B4C0031EDAB /* Debug */ = {
@@ -281,33 +244,37 @@
 			};
 			name = Release;
 		};
-		386B764822662B4C0031EDAB /* Debug */ = {
+		C3F31D5D2268E220003C991A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RetainTests/Info.plist;
+				DEVELOPMENT_TEAM = 7JHAJ3JSPW;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woodblockwithoutco.RetainTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsexceptional.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		386B764922662B4C0031EDAB /* Release */ = {
+		C3F31D5E2268E220003C991A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RetainTests/Info.plist;
+				DEVELOPMENT_TEAM = 7JHAJ3JSPW;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.woodblockwithoutco.RetainTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsexceptional.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,11 +292,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		386B764722662B4C0031EDAB /* Build configuration list for PBXNativeTarget "RetainTests" */ = {
+		C3F31D5F2268E220003C991A /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				386B764822662B4C0031EDAB /* Debug */,
-				386B764922662B4C0031EDAB /* Release */,
+				C3F31D5D2268E220003C991A /* Debug */,
+				C3F31D5E2268E220003C991A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
